@@ -1,0 +1,92 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/groups",
+      "handler": "group.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/groups/count",
+      "handler": "group.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/groups/:id",
+      "handler": "group.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/groups",
+      "handler": "group.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/groups/:id",
+      "handler": "group.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/groups/:id",
+      "handler": "group.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/groups-post",
+      "handler": "group_statistic.totalPost",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/groups-user",
+      "handler": "group_statistic.totalUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/getdrivebyuuid",
+      "handler": "upload.uploadDriveUuid",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/test-upfile",
+      "handler": "upload.uploadFile",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/add_new_row",
+      "handler": "sheet.add",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

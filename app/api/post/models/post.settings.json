@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "post_id": {
+      "type": "string"
+    },
+    "create_date": {
+      "type": "datetime"
+    },
+    "update_date": {
+      "type": "datetime"
+    },
+    "content": {
+      "type": "text"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "admin_name": {
+      "type": "string"
+    },
+    "reaction": {
+      "type": "integer"
+    },
+    "comment": {
+      "type": "integer"
+    },
+    "link": {
+      "type": "string",
+      "unique": true
+    },
+    "group_id": {
+      "type": "string"
+    },
+    "group_name": {
+      "type": "string"
+    },
+    "total": {
+      "type": "integer"
+    },
+    "share": {
+      "type": "integer"
+    },
+    "admin_user": {
+      "unique": true,
+      "columnName": "id",
+      "plugin": "admin",
+      "model": "user"
+    },
+    "admin_id": {
+      "type": "integer"
+    },
+    "price_fix": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "price_bonus": {
+      "type": "biginteger",
+      "default": "0"
+    }
+  }
+}

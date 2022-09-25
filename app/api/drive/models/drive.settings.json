@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drives",
+  "info": {
+    "name": "drive"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "place_name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "total_image": {
+      "type": "integer"
+    }
+  }
+}

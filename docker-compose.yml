@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  partner.api:
+    container_name: partner.api
+    image: partner.api
+    build: .
+    ports:
+      - "1345:1345"
+    volumes:
+      - ./uploads:/app/node/public/uploads
+
+volumes:
+  partner.api:
+    name: partner.api

@@ -1,0 +1,48 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "clipboardy": "^3.0.0",
+    "copy-to-clipboard": "^3.3.1",
+    "google-spreadsheet": "^3.3.0",
+    "googleapis": "^107.0.0",
+    "js-sha256": "^0.9.0",
+    "knex": "0.21.18",
+    "mysql": "2.18.1",
+    "node-fetch": "^2.6.1",
+    "puppeteer": "^9.1.1",
+    "sha256": "^0.2.0",
+    "strapi": "3.6.8",
+    "strapi-admin": "3.6.8",
+    "strapi-connector-bookshelf": "3.6.8",
+    "strapi-middleware-cache": "^2.1.7",
+    "strapi-plugin-content-manager": "3.6.8",
+    "strapi-plugin-content-type-builder": "3.6.8",
+    "strapi-plugin-email": "3.6.8",
+    "strapi-plugin-i18n": "3.6.8",
+    "strapi-plugin-upload": "3.6.8",
+    "strapi-plugin-users-permissions": "3.6.8",
+    "strapi-utils": "3.6.8",
+    "xlsx": "^0.18.5"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "b2465ead-2a6f-4cbf-90de-a4f4c70d51ae"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}

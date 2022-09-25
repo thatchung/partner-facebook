@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groups",
+  "info": {
+    "name": "group"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price_fix": {
+      "type": "biginteger"
+    },
+    "fb_id": {
+      "type": "string"
+    },
+    "price_bonus": {
+      "type": "json"
+    }
+  }
+}

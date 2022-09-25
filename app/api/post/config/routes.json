@@ -1,0 +1,108 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/posts",
+      "handler": "post.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/posts/count",
+      "handler": "post.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/posts/:id",
+      "handler": "post.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/posts",
+      "handler": "post.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/posts/:id",
+      "handler": "post.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/posts/:id",
+      "handler": "post.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/total-post",
+      "handler": "statistic.totalPrice",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-statistic",
+      "handler": "user_statistic.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/update-post",
+      "handler": "update_view.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/update-all",
+      "handler": "update_all.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/update-allv2",
+      "handler": "update_all.indexv2",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/get-link",
+      "handler": "getlink.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-link-data",
+      "handler": "getlink.datapost",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
