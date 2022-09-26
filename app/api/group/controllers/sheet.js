@@ -24,7 +24,8 @@ module.exports = {
 
 		await doc.loadInfo();
 		const sheet = doc.sheetsByIndex[0];
-		await sheet.addRow({ name , phone});
+		const date = moment().format('hh:mm:ss DD-MM-YYYY');
+		await sheet.addRow({ name , phone, date});
 
 	} catch (err) {
 	    throw err;
